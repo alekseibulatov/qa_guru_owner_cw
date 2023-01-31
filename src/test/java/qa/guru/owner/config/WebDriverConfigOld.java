@@ -31,7 +31,7 @@ public class WebDriverConfigOld {
 
     public URL getRemoteUrl() {
         //зачитываем значение из настроек
-        String getRemoteUrl = System.getProperty("getRemoteUrl");
+        String getRemoteUrl = System.getProperty("browser");
         //проверяем дефолтное значение
         if (Objects.isNull(getRemoteUrl)) {
             getRemoteUrl = "http://localhost:4444";
